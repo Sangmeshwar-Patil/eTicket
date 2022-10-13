@@ -17,7 +17,7 @@ namespace eTicket.Controllers
         public IActionResult Index()
         {
             var actorsList = _appDBContext.Actors.ToList();
-            return new JsonResult(actorsList);
+            return View(actorsList);
         }
     }
 }
